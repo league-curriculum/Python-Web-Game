@@ -4,13 +4,6 @@ Deploy your pygames code to GitHub Pages with just a push
 
 ## Gameplay
 
-### PC
-
-![PC Gameplay](./images/gameplay.gif)
-
-### Mobile
-
-![Moblie Gameplay](./images/mobile_version.gif)
 
 ## Setup Environment for local
 
