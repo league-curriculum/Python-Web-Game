@@ -42,6 +42,7 @@ YELLOW = (241, 255, 0)
 BLUE = (80, 255, 239)
 PURPLE = (203, 0, 255)
 RED = (237, 28, 36)
+ORANGE = (255, 149, 14)
 
 SCREEN = display.set_mode((800, 600))
 FONT = FONT_PATH + "space_invaders.ttf"
@@ -384,7 +385,9 @@ class SpaceInvaders(object):
         self.enemy4Text = Text(FONT, 25, "   =  ?????", RED, 368, 420)
         self.scoreText = Text(FONT, 20, "Score", WHITE, 5, 5)
         self.livesText = Text(FONT, 20, "Lives ", WHITE, 640, 5)
+        
         self.creator_name = Text(FONT, 20, "Sandy Inspires", GREEN, 600, 570)
+        self.jtl = Text(FONT, 20, "THE LEAGUE", ORANGE, 10, 570)
 
         self.life1 = Life(715, 3)
         self.life2 = Life(742, 3)
@@ -663,6 +666,7 @@ class SpaceInvaders(object):
                 self.enemy3Text.draw(self.screen)
                 self.enemy4Text.draw(self.screen)
                 self.creator_name.draw(self.screen)
+                self.jtl.draw(self.screen)
                 self.create_main_menu()
                 for e in event.get():
                     if self.should_exit(e):
@@ -693,6 +697,7 @@ class SpaceInvaders(object):
                         self.livesGroup.update()
                         self.check_input()
                         self.creator_name.draw(self.screen)
+                        self.jtl.draw(self.screen)
                     if currentTime - self.gameTimer > 3000:
                         # Move enemies closer to bottom
                         self.enemyPosition += ENEMY_MOVE_DOWN
@@ -715,6 +720,7 @@ class SpaceInvaders(object):
                     self.create_new_ship(self.makeNewShip, currentTime)
                     self.make_enemies_shoot()
                     self.creator_name.draw(self.screen)
+                    self.jtl.draw(self.screen)
 
             elif self.gameOver:
                 currentTime = time.get_ticks()
