@@ -1,29 +1,12 @@
-from pygame import (
-    sprite,
-    transform,
-    mixer,
-    time,
-    Surface,
-    font,
-    K_RIGHT,
-    K_LEFT,
-    display,
-    image,
-    image,
-    sprite,
-    transform,
-    event,
-    mixer,
-    time,
-    KEYUP,
-    KEYDOWN,
-    K_ESCAPE,
-    K_SPACE,
-    QUIT,
-    init,
-    key,
-)
+"""
+Main module for the Space Invaders game using Pygame.
+"""
+
 import sys
+
+from pygame import sprite, transform, mixer, time, Surface, font, K_RIGHT, K_LEFT, display, image, \
+    event, KEYUP, KEYDOWN, K_ESCAPE, K_SPACE, QUIT, init, key
+
 from os.path import abspath, dirname
 from random import choice
 import asyncio

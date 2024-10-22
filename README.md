@@ -1,26 +1,48 @@
 # Deploy pygames
 
-Deploy your pygames code to GitHub Pages with just a push
+Run your PyGame games on the web with Github pages. You game will actually be
+running entirely in the browser using WebAssembly and pygbag. 
 
-## Gameplay
+## Setup Environment for local development
+
+Create an environment and load the requirements.
+
+```bash
+    python3 -mvenv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+```
+
+Then you can run the game:
+
+```bash
+ python src/main.py
+```
+
+After demonstrating that the Space Invaders game works, you can develop your own
+game in the `src/` directory. 
+
+## Run the web game
+
+```bash
+pygbag src/
+```
+Then you can open [http://localhost:8000/](http://localhost:8000/) to play the game
+
+## Publish to Github
+
+You should have this repo in a Github repo. Go to `Settings>Pages`. Under "Build
+and deployment" set "Source" to "Deploy from Branch"
+
+Then publish the branch with: `make publish`
+
+Wait a bit then back in the Github Pages settings, set "Branch" to "gh-pages" (
+this branch is created by `make publish` and may take a while to appear ) Wait a
+bit more, and when your pages are readh, you will see the URL at the top of the
+Github Settings page. 
 
 
-## Setup Environment for local
 
-### Create a venv
+## Original 
 
-`python3 -m venv venv`
-
-### Install all Python packages
-
-`pip install -r requirements.txt`
-
-### Run the game
-
-`python3 main.py`
-
-### Web - runs on port localhost:8000
-
-Note: Assuming you've the game in a separate folder
-
-`python3 -m pygbag space_invaders/`
+This repo is copied from the original by Santhoshkumard11, from this [Github repo](https://github.com/Santhoshkumard11/deploy-pygame). See his [DEV article for a discussion](https://dev.to/sandy_codes_py/deploy-pygames-to-github-pages-with-webassembly-56po)

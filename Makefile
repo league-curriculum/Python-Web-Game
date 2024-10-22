@@ -9,11 +9,13 @@ CNAME =
 
 
 publish:
-	@pygbag --build --app_name $(APP_NAME) --icon $(ICON)  . 
+	@pygbag --build --app_name $(APP_NAME) --icon $(ICON)  src
 	@echo "Publishing to $(REPO_URL)"
 ifdef CNAME
-	@ghp-import -n -p --cname $(CNAME) -f ./build/web 
+	@ghp-import -n -p --cname $(CNAME) -f ./src/build/web 
 else
-	@ghp-import -n -p -f ./build/web 
+	@ghp-import -n -p -f ./src/build/web 
 endif
 
+runweb:
+	@pygbag src
