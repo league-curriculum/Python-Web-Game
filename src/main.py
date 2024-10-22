@@ -39,7 +39,7 @@ IMG_NAMES = [
     "enemy3_1",
     "enemy3_2",
     "explosionblue",
-    "explosiongreen",
+    "explosiongreen",shell-ai 
     "explosionpurple",
     "laser",
     "enemylaser",

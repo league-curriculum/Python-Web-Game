@@ -1,4 +1,4 @@
-# Deploy pygames
+# Deploy PyGame Games to a Website
 
 Run your PyGame games on the web with Github pages. You game will actually be
 running entirely in the browser using WebAssembly and pygbag. 
@@ -41,6 +41,10 @@ this branch is created by `make publish` and may take a while to appear ) Wait a
 bit more, and when your pages are readh, you will see the URL at the top of the
 Github Settings page. 
 
+
+## Example
+
+You can play the [demo Space Invaders game  here](https://league-curriculum.github.io/Python-Web-Game/). 
 
 
 ## Original 

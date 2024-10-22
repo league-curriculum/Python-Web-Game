@@ -3,7 +3,7 @@
 REPO_URL := $(shell git config --get remote.origin.url)
 
 APP_NAME = 'Space Invaders'
-ICON = 'images/favicon.png'
+ICON = 'src/images/favicon.png'
 
 CNAME = 
 
