@@ -39,11 +39,11 @@ IMG_NAMES = [
     "enemy3_1",
     "enemy3_2",
     "explosionblue",
-    "explosiongreen",shell-ai 
+    "explosiongreen",
     "explosionpurple",
     "laser",
-    "enemylaser",
-]
+    "enemylaser" ]
+
 IMAGES = {
     name: image.load(IMAGE_PATH + "{}.png".format(name)).convert_alpha()
     for name in IMG_NAMES
