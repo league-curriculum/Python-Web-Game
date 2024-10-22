@@ -6,9 +6,7 @@ running entirely in the browser using WebAssembly and pygbag.
 ## Setup Environment for local development
 
 First, copy this repo. You should use the green 
-<span style="background-color: green; color: white; padding: 10px; font-size: 16px;">
-        Use this template ▾
-</span> 
+<span style="background-color: green; color: white; padding: 10px; font-size: 16px;">"Use this template ▾"</span> 
  button, but you can also fork the repository to your own account. 
 
 Clone to your development environment,  or make a codespace, then reate an
